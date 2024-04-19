@@ -17,6 +17,9 @@ ServerEvents.recipes(event => {
     // Compressed crafting station
     comapcting(event, 'kubejs:compressed_crafting_table', 'minecraft:crafting_table');
 
+    comapcting(event, 'kubejs:ultra_dense_hydrogen', 'kubejs:dense_hydrogen');
+    comapcting(event, 'kubejs:dense_hydrogen', 'kubejs:solidified_hydrogen');
+
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
