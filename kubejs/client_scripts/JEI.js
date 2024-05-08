@@ -30,12 +30,6 @@ JEIEvents.hideItems(event => {
     //EnderIO (grinding balls)
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
 
-    //GT Steam Age
-    const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
-    gtMachines.forEach(machine => {
-        event.hide(['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine])
-    })
-
     //TelePastries
     event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
 
@@ -116,6 +110,9 @@ JEIEvents.hideItems(event => {
 
     // AE2 stuff
     event.hide(['ae2:fluix_dust', 'ae2:fluix_crystal', 'ae2:fluix_block', 'ae2:certus_quartz_crystal', 'ae2:charged_certus_quartz_crystal'])
+
+    //Steel Machine Casing
+    event.hide('gtceu:steel_machine_casing')
 })
 
 JEIEvents.hideFluids(event => {
